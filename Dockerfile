@@ -1,5 +1,5 @@
 #step 1 build process
-FROM node:latest as build-deps
+FROM node as build-deps
 WORKDIR /usr/src/app
 COPY package*.json ./
 
