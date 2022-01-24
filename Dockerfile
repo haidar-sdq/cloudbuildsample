@@ -1,5 +1,5 @@
 #step 1 build process
-FROM node as build-deps
+FROM node:8.16 as build-deps
 WORKDIR /usr/src/app
 COPY package*.json ./
 
