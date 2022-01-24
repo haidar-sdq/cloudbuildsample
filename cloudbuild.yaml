@@ -25,7 +25,7 @@ steps:
     - '-c'
     - |
           
-          gcloud container clusters get-credentials my-cluster --project atambua --zone asia-southeast1-a
+          gcloud container clusters get-credentials my-cluster --project double-voice-335917 --zone asia-southeast1-a
           sed -i 's|gcr.io/project-id/myreact-app|gcr.io/$PROJECT_ID/myreact-app:$SHORT_SHA|' ./deployment.yaml
           kubectl apply -f ./deployment.yaml
 timeout: 2000s
